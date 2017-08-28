@@ -15,10 +15,15 @@
   <!-- navbar -->
   <nav class="navbar navbar-light bg-light justify-content-between">
     <a class="navbar-brand">P H O T O G R A M</a>
-    <% if current_user %>
-      <%= button_to 'New Post', new_post_path, method: :post, class: "btn my-2 my-sm-0" %>
-      <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn my-2 my-sm-0", id: "sign_out" %>
-    <% end %>
+    <ul>
+      <% if current_user %>
+        <p>You logged in as: <%= link_to current_user.email, edit_user_registration_path %></p>
+        <p><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn my-2 my-sm-0", id: "sign_out" %></p>
+        <% else %>
+        <li><%= link_to "Login", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <% end %>
+    </ul>
   </nav>
 
   <body>

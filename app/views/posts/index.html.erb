@@ -4,6 +4,8 @@
   <p><%= image_tag post.image.url(:large)%></p>
   <p>About <%= post.description %></p>
   <p> <%= post.posted_at %></p>
+  <p><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Edit', edit_post_path(post) %></p>
 <% end %>
 
 
