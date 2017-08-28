@@ -1,9 +1,9 @@
 <h1>Posts</h1>
 
 <% @posts.each do |post| %>
-  <p><%= image_tag @post.image.url(:large)%></p>
-  <p>About <%= @post.description %></p>
-  <p> <%= @post.posted_at %></p>
+  <p><%= image_tag post.image.url(:large)%></p>
+  <p>About <%= post.description %></p>
+  <p> <%= post.posted_at %></p>
 <% end %>
 
 
