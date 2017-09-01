@@ -1,24 +1,40 @@
-# README
+# Photogram
+About: This is my first independent Ruby on Rails project, that is built after a week experimenting with Rails in the group project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Features: As a user you can sign up, login and log out. Once loggin you can leave an photo post, attaching an image from your device. You can comments on other's people's posts. Personal post can be removed or edited.   
 
-Things you may want to cover:
+My approach: I will do the small possible thing first and try to make it work and then I move on to the next feature. So I wrote some user stories.
 
-* Ruby version
+## Installation
+```
+$ git clone
+$ cd to the directory
+$ rake db:migrate
+$ rails server
+$ open http://localhost:3000
 
-* System dependencies
+```
 
-* Configuration
+## User Stories
+```
+As a user,
+So that I can show my images,
+I want to be able to post pictures on Photogram
 
-* Database creation
+As a user,
+So that I can use my individual profile,
+I want to be able to sign up
 
-* Database initialization
+As a user,
+So that I can use my profile every day,
+I want to be able to login with my existing credentials and logout after
 
-* How to run the test suite
+As a user,
+So that I can share with everyone what I think of a picture,
+I want to be able to comment under the post
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Next stept
+- to implement likes;
+- add more styling
+- create an external image storage, using S3 Amazon
