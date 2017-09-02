@@ -1,19 +1,9 @@
 # Photogram
-About: This is my first independent Ruby on Rails project, that is built after a week experimenting with Rails in the group project.
+About: This is my first independent Ruby on Rails project, that is built after a week of experimenting with Rails during our group project.
 
-Features: As a user you can sign up, login and log out. Once loggin you can leave an photo post, attaching an image from your device. You can comments on other's people's posts. Personal post can be removed or edited.   
+Features: As a user you can sign up, login and log out. Once loggin you can leave a photo post, attaching an image from your device. You can comment on others people's posts. A personal post can be removed or edited.   
 
-My approach: I will do the small possible thing first and try to make it work and then I move on to the next feature. So I wrote some user stories.
-
-## Installation
-```
-$ git clone
-$ cd to the directory
-$ rake db:migrate
-$ rails server
-$ open http://localhost:3000
-
-```
+My approach: I will do the small possible thing first and try to make it work and then I move on to next feature. So I wrote some user stories.
 
 ## User Stories
 ```
@@ -33,7 +23,15 @@ As a user,
 So that I can share with everyone what I think of a picture,
 I want to be able to comment under the post
 ```
+## Installation
+```
+$ git clone
+$ cd to the directory
+$ rake db:migrate
+$ rails server
+$ open http://localhost:3000
 
+```
 ## Next stept
 - to implement likes;
 - add more styling

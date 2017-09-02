@@ -11,10 +11,7 @@
     <p>content: <%= comment.content %><p>
   <% end %>
 
-  <%= form_for post.comments.new(user: current_user), html: { multipart: true }, url: {controller: "comments", action: "create"} do |form| %>
-    <%= form.text_area :content, :rows =>4, :cols => 50 %>
-    <%= form.submit "Submit" %>
-  <% end %>
+
 
   <p><%= link_to 'Remove', post, method: :delete, data: { confirm: 'Are you sure?' } %> |
   <%= link_to 'Edit', edit_post_path(post) %></p>
