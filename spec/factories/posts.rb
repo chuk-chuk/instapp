@@ -6,6 +6,6 @@ FactoryGirl.define do
     sequence :description do |n|
       "Post generator #{n}"
     end
-    image { fixture_file_upload(Rails.root.join('spec/fixtures/test.png', 'image/png') }
+    image { fixture_file_upload(Rails.root.join('spec/fixtures/test.png'), 'image/png') }
   end
 end

@@ -1,10 +1,10 @@
 def sign_up
-  visit('/user/sign_up')
+  visit('/users/sign_up')
   within(:css, 'form.new_user') do
-    fill_in 'user_name', with 'yulia'
-    fill_in 'user_email', with 'test@test.com'
-    fill_in 'user_password', with '123456'
-    fill_in 'user_password_confirmation', with '123456'
+    fill_in 'user_name', with: 'yulia'
+    fill_in 'user_email', with: 'test@test.com'
+    fill_in 'user_password', with: '123456'
+    fill_in 'user_password_confirmation', with: '123456'
     click_button 'Sign up'
   end
 end
