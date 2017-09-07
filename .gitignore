@@ -14,6 +14,7 @@
 !/tmp/.keep
 
 /node_modules
+/public/system/posts/images/000/000
 /yarn-error.log
 
 .byebug_history

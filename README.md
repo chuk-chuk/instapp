@@ -5,6 +5,12 @@ Features: As a user you can sign up, login and log out. Once loggin you can leav
 
 My approach: I will do the small possible thing first and try to make it work and then I move on to next feature. So I wrote some user stories.
 
+![logo](/public/signup.png)
+
+![logo](/public/login.png)
+
+![logo](/public/index.png)
+
 ## User Stories
 ```
 As a user,
@@ -25,14 +31,16 @@ I want to be able to comment under the post
 ```
 ## Installation
 ```
-$ git clone
-$ cd to the directory
-$ rake db:migrate
-$ rails server
-$ open http://localhost:3000
+git clone git@github.com:chuk-chuk/instapp.git
+cd instapp
+rake db:migrate
+rails server
+http://localhost:3000
 
 ```
 ## Next stept
 - to implement likes;
 - add more styling
 - create an external image storage, using S3 Amazon
+- deploy on Heroku
+- increase test coverage

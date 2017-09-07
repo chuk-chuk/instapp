@@ -1,18 +1,17 @@
-<h1>Posts</h1>
-
+<p>P O S T S  B O A R D</p>
 <% @posts.each do |post| %>
   <p><%= image_tag post.image.url(:large)%></p>
-  <p>About <%= post.description %></p>
-  <p>by <%= post.user.name %></p>
-  <p> <%= post.posted_at %></p>
+  <p>" <%= post.description %> "</p>
+  <p>by <%= post.user.name %> on <%= post.posted_at %></p>
 
   <% post.comments.each do |comment| %>
-    <p>content: <%= comment.content %><p>
-    <p>commented by <%= comment.user.name %><p>
+    <p><%= comment.user.name %> commented " <%= comment.content %> "<p>
   <% end %>
 
   <%= form_for post.comments.new(user: current_user), html: { multipart: true }, url: {controller: "comments", action: "create"} do |form| %>
-     <%= form.text_area :content, :rows =>4, :cols => 50 %>
+     <%= form.text_area :content, :rows =>2, :cols => 35 %>
+     <%= form.hidden_field :post_id, value: post.id %>
+     <%= form.hidden_field :user_id, value: current_user.id %>
      <%= form.submit "Submit" %>
    <% end %>
 
